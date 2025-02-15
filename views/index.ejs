@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<body>
+    <h1 class="heading">Quora Posts</h1>
+    <div class="posts">
+        <ul>
+            <% for(i of data) { %>
+                <li>
+                    <h4>UserId : <%= i.userid %></h4>
+                    <h4>User Name : <%= i.username %></h4>
+                    <h4>User Email : <%= i.email %></h4>
+                    <form action="http://localhost:8080/posts/edit/<%= i.id %>" method="GET">
+                        <button type="submit">Edit Username</button>
+                    </form>
+                    <br>
+                    <form action="http://localhost:8080/posts/delete/<%= i.userid %>?_method=DELETE" method="POST">
+                        <button type="submit">Delete Account</button>
+                    </form>
+                    <hr>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+    <form action="http://localhost:8080/posts/new" method="GET">
+        <button type="submit">New Account</button>
+    </form>
+</body>
+</html>

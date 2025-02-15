@@ -1,0 +1,13 @@
+.posts
+{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 100em;
+    float: left;
+}
+
+.heading{
+    background-color: azure;
+}

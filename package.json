@@ -1,0 +1,27 @@
+{
+  "name": "db_proj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maharsh-Nayak/blogs-post.git"
+  },
+  "author": "maharsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maharsh-Nayak/blogs-post/issues"
+  },
+  "homepage": "https://github.com/Maharsh-Nayak/blogs-post#readme",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.12.0",
+    "nodemon": "^3.1.9"
+  }
+}

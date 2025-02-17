@@ -1,6 +1,6 @@
 <%- include("partials/header") %>
 <body>
-    <form action="http://localhost:3000/posts/edit/<%= user.id %>?__method=PATCH" method="POST">
+    <form action="/posts/edit/<%= user.id %>?__method=PATCH" method="POST">
         <h4>Old Name : <%= user.username %></h4>
         <label for="username">New Name:</label>
         <input type="text" id="username" name="username" required>

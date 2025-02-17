@@ -17,10 +17,11 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'first_db',
-    password: 'maharsh'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: 3306
 });
 
 let createRandomUser = () => {
